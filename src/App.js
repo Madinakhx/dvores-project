@@ -13,17 +13,15 @@ import React from "react";
 function App() {
   return (
       <div>
-          <Navbar/>
-
-          <h1>Lorem ipsum.</h1>
           <Routes>
-
+              <Route  element={<Navbar/>}>
               <Route path={"/"} element={<Home/>}/>
-              <Route path={"/"} element={<About/>}/>
-              <Route path={"/"} element={<Sports/>}/>
-              <Route path={"/"} element={<Awards/>}/>
-              <Route path={"/"} element={<Staff/>}/>
-              <Route path={"/"} element={<Contact/>}/>
+              <Route path="/about" element={<About/>}/>
+              <Route path="/sports" element={<Sports/>}/>
+              <Route path="/awards" element={<Awards/>}/>
+              <Route path="/staff" element={<Staff/>}/>
+              <Route path="/contact" element={<Contact/>}/>
+              </Route>
 
           </Routes>
 
